@@ -1,0 +1,257 @@
+variables:
+	{umfrage::ja} = 0
+	{umfrage::nein} = 0
+
+	{umfrageplugins::ja} = 0
+	{umfrageplugins::nein} = 0
+	{umfrageteam::ja} = 0
+	{umfrageteam::nein} = 0
+	{umfrageserver::ja} = 0
+	{umfrageserver::nein} = 0
+
+
+options:
+	Prefix: §8§l【§e§lUmfrage§8§l】&8&l▶§7
+	Title: §8§l【§e§lUmfrage§8§l】
+	
+command /umfrage [<text>]:
+	permission: server.mod
+	trigger:
+		if arg-1 is not set:
+			send "{@Prefix} §e/umfrage §f<Text>"
+			stop
+		if arg 1 is set:
+			loop 200 times:
+				json("@a"," ")
+			json("@a","          &8&m--&7&m--&e&m--&6&m--&8( &c&lUMFRAGE &8)&6&m--&e&m--&7&m--&8&m--") 
+			json("@a"," ")
+			json("@a","       &7%arg 1%") 
+			json("@a"," ")
+			json("@a","          &7[&aJa&7]||cmd:/yess||ttp:&f&o&lKlick für Ja!||                        ||cmd:/||             ||&7[&cNein&7]||cmd:/noo||ttp:&f&o&lKlick für Nein!") 
+			json("@a"," ")
+			json("@a","                      &7&o20sek. Bedenkzeit!          ") 
+			json("@a"," ")
+			json("@a","          &8&m--&7&m--&e&m--&6&m--&8( &c&lUMFRAGE &8)&6&m--&e&m--&7&m--&8&m--")
+			set {umfrage::countdown} to true
+			wait 20 seconds
+			loop 20 times:
+				json("@a"," ")
+			broadcast "          &8&m--&7&m--&e&m--&6&m--&8( &c&lUMFRAGE &8)&6&m--&e&m--&7&m--&8&m--"
+			broadcast " "
+			broadcast "          &7&oDas Ergebnis:"
+			broadcast " "
+			broadcast "          &7[&aJa&7] &7hat &a%{umfrage::ja}% &7Votes!"
+			broadcast "          &7[&cNein&7] &7hat &c%{umfrage::nein}% &7Votes!"
+			broadcast " "
+			broadcast "          &8&m--&7&m--&e&m--&6&m--&8( &c&lUMFRAGE &8)&6&m--&e&m--&7&m--&8&m--"
+			set {umfrage::ja} to 0
+			set {umfrage::nein} to 0
+			set {umfrage::countdown} to false
+			
+			
+command /yess:
+	trigger:
+		if {umfrage::countdown} is true:
+			loop 200 times:
+				json("%player%"," ")
+			json("%player%","          &8&m--&7&m--&e&m--&6&m--&8( &c&lUMFRAGE &8)&6&m--&e&m--&7&m--&8&m--") 
+			json("%player%"," ")
+			json("%player%","                     &7&oDanke für's Voten!") 
+			json("%player%"," ")
+			json("%player%","          &8&m--&7&m--&e&m--&6&m--&8( &c&lUMFRAGE &8)&6&m--&e&m--&7&m--&8&m--")
+			add 1 to {umfrage::ja}
+		
+command /noo:
+	trigger:
+		if {umfrage::countdown} is true:
+			loop 200 times:
+				json("%player%"," ")
+			json("%player%","          &8&m--&7&m--&e&m--&6&m--&8( &c&lUMFRAGE &8)&6&m--&e&m--&7&m--&8&m--") 
+			json("%player%"," ")
+			json("%player%","                     &7&oDanke für's Voten!") 
+			json("%player%"," ")
+			json("%player%","          &8&m--&7&m--&e&m--&6&m--&8( &c&lUMFRAGE &8)&6&m--&e&m--&7&m--&8&m--")
+		add 1 to {umfrage::nein}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+on right click on entity:
+	if name of event-entity is "§6§lU§emfrage":
+		cancel event
+		play "block_dispenser_launch" to player with volume 1 and pitch 1.0
+		
+		open virtual brewing inventory with size 1 named "§6§lU§emfrage §8§l┃ §7Menu" to player	
+		
+		make a gui slot 0 of player with command block named "§8§l➢ §a§lPlugins §8/ §a§lMaps §f× §8(§a§l%{umfrageplugins::ja}%§8) §8▪ §8(§c§l%{umfrageplugins::nein}%§8)" with lore "|| §8§l» §7Wie sehr gefallen|| §8§l» §7dir die §a§lPlugins" to run:
+			
+			play "entity_bat_takeoff" to player
+			
+			open virtual brewing inventory with size 1 named "§6§lU§emfrage §8§l┃ §7Menu" to player
+
+			make a gui slot 0 of player with emerald named "§8§l➢ §a§lSie gefallen mir" with lore "|| §8§l» §c§l%{umfrageplugins::ja}% §7Gefallen die §a§lPlugins||  ||  §fKlicke um §a§lJA §fzu sagen" to run:			
+				
+				if "%{umfrageplugins::vote::*}%" contains "%player%":
+					send player title "{@Title}" with subtitle "§7Bereits §aabgestimmt" for 2 seconds
+					play "entity_bat_takeoff" to player
+				
+				else:
+					add 1 to {umfrageplugins::ja}
+					send player title "{@Title}" with subtitle "§7Du hast für §a§lJA §7gestimmt" for 2 seconds
+					add player's name to {umfrageplugins::vote::*}
+					add 2500 to player's account
+					play "entity_player_levelup" to player
+					launch flickering trailing star coloured green fading to red, black and green at player timed 1.0
+					
+			make a gui slot 1 of player with bars named "§7" to run:	
+				play "entity_bat_takeoff" to player
+
+			make a gui slot 2 of player with redstone named "§8§l➢ §c§lNein sie gefallen mir nicht" with lore "|| §8§l» §c§l%{umfrageplugins::nein}% §7Gefallen die §a§lPlugins §cnicht||  ||  §fKlicke um §c§lNEIN §fzu sagen" to run:			
+				if "%{umfrageplugins::vote::*}%" contains "%player%":
+					send player title "{@Title}" with subtitle "§7Bereits §aabgestimmt" for 2 seconds
+					play "entity_bat_takeoff" to player
+				
+				else:
+					add 1 to {umfrageplugins::nein}
+					send player title "{@Title}" with subtitle "§7Du hast für §c§lNEIN §7gestimmt" for 2 seconds
+					add player's name to {umfrageplugins::vote::*}
+					play "entity_player_levelup" to player
+					launch flickering trailing star coloured green fading to red, black and green at player timed 1.0
+					
+			make a gui slot 3 of player with sign item named "§8§l➢ §c§lUmfrage" with lore "|| §8§l» §7Hier kannst Du uns sagen|| §8§l» §7was dir §a§lgefällt §7und was §c§lnicht" to run:
+				play "entity_bat_takeoff" to player
+				stop
+				
+				
+				
+	
+
+
+
+		make a gui slot 1 of player with nether star named "§8§l➢ §6§lServer §f× §8(§a§l%{umfrageserver::ja}%§8) §8▪ §8(§c§l%{umfrageserver::nein}%§8)" with lore "|| §8§l» §7Wie sehr gefällt dir|| §8§l» §7unser §6§lServer §7an sich" to run:
+			
+			play "entity_bat_takeoff" to player
+			
+			open virtual brewing inventory with size 1 named "§6§lU§emfrage §8§l┃ §7Menu" to player
+
+			make a gui slot 0 of player with emerald named "§8§l➢ §a§lEr gefällt mir" with lore "|| §8§l» §c§l%{umfrageserver::ja}% §7Gefällt der §6§lServer||  ||  §fKlicke um §a§lJA §fzu sagen" to run:			
+				
+				if "%{umfrageserver::vote::*}%" contains "%player%":
+					send player title "{@Title}" with subtitle "§7Bereits §aabgestimmt" for 2 seconds
+					play "entity_bat_takeoff" to player
+				
+				else:
+					add 1 to {umfrageserver::ja}
+					send player title "{@Title}" with subtitle "§7Du hast für §a§lJA §7gestimmt" for 2 seconds
+					add player's name to {umfrageserver::vote::*}
+					add 2500 to player's account
+					play "entity_player_levelup" to player
+					launch flickering trailing star coloured green fading to red, black and green at player timed 1.0
+					
+			make a gui slot 1 of player with bars named "§7" to run:	
+				play "entity_bat_takeoff" to player
+
+			make a gui slot 2 of player with redstone named "§8§l➢ §c§lNein er gefällt mir nicht" with lore "|| §8§l» §c§l%{umfrageserver::nein}% §7Gefällt der §6§lServer §cnicht||  ||  §fKlicke um §c§lNEIN §fzu sagen" to run:			
+				if "%{umfrageserver::vote::*}%" contains "%player%":
+					send player title "{@Title}" with subtitle "§7Bereits §aabgestimmt" for 2 seconds
+					play "entity_bat_takeoff" to player
+				
+				else:
+					add 1 to {umfrageserver::nein}
+					send player title "{@Title}" with subtitle "§7Du hast für §c§lNEIN §7gestimmt" for 2 seconds
+					add player's name to {umfrageserver::vote::*}
+					play "entity_player_levelup" to player
+					launch flickering trailing star coloured green fading to red, black and green at player timed 1.0
+					
+			make a gui slot 3 of player with sign item named "§8§l➢ §c§lUmfrage" with lore "|| §8§l» §7Hier kannst Du uns sagen|| §8§l» §7was dir §a§lgefällt §7und was §c§lnicht" to run:
+				play "entity_bat_takeoff" to player
+				stop
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+		make a gui slot 2 of player with player's skull named "§8§l➢ §9§lTeam §f× §8(§a§l%{umfrageteam::ja}%§8) §8▪ §8(§c§l%{umfrageteam::nein}%§8)" with lore "|| §8§l» §7Wie sehr gefällt dir|| §8§l» §7das §9§lTeam §7von uns" to run:
+			
+			play "entity_bat_takeoff" to player
+			
+			open virtual brewing inventory with size 1 named "§6§lU§emfrage §8§l┃ §7Menu" to player
+
+			make a gui slot 0 of player with emerald named "§8§l➢ §a§lEs gefällt mir" with lore "|| §8§l» §c§l%{umfrageteam::ja}% §7Gefallen das §9§lTeam||  ||  §fKlicke um §a§lJA §fzu sagen" to run:			
+				
+				if "%{umfrageteam::vote::*}%" contains "%player%":
+					send player title "{@Title}" with subtitle "§7Bereits §aabgestimmt" for 2 seconds
+					play "entity_bat_takeoff" to player
+					stop
+				
+				else:
+					add 1 to {umfrageteam::ja}
+					send player title "{@Title}" with subtitle "§7Du hast für §a§lJA §7gestimmt" for 2 seconds
+					add player's name to {umfrageteam::vote::*}
+					add 2500 to player's account
+					play "entity_player_levelup" to player
+					launch flickering trailing star coloured green fading to red, black and green at player timed 1.0
+					stop
+					
+			make a gui slot 1 of player with bars named "§7" to run:	
+				play "entity_bat_takeoff" to player
+				stop
+
+			make a gui slot 2 of player with redstone named "§8§l➢ §c§lNein es gefällt mir nicht" with lore "|| §8§l» §c§l%{umfrageteam::nein}% §7Gefallen das §9§lTeam §cnicht||  ||  §fKlicke um §c§lNEIN §fzu sagen" to run:			
+				if "%{umfrageteam::vote::*}%" contains "%player%":
+					send player title "{@Title}" with subtitle "§7Bereits §aabgestimmt" for 2 seconds
+					play "entity_bat_takeoff" to player
+					stop
+				
+				else:
+					add 1 to {umfrageteam::nein}
+					send player title "{@Title}" with subtitle "§7Du hast für §c§lNEIN §7gestimmt" for 2 seconds
+					add player's name to {umfrageteam::vote::*}
+					play "entity_player_levelup" to player
+					launch flickering trailing star coloured green fading to red, black and green at player timed 1.0
+					stop
+					
+			make a gui slot 3 of player with sign item named "§8§l➢ §c§lUmfrage" with lore "|| §8§l» §7Hier kannst Du uns sagen|| §8§l» §7was dir §a§lgefällt §7und was §c§lnicht" to run:
+				play "entity_bat_takeoff" to player
+				stop
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+				
+		
+
+		
+		make a gui slot 3 of player with sign item named "§8§l➢ §c§lUmfrage" with lore "|| §8§l» §7Hier kannst Du uns sagen|| §8§l» §7was dir §a§lgefällt §7und was §c§lnicht" to run:
+			play "entity_bat_takeoff" to player
+			stop
+
+
+
+				

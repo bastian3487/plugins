@@ -1,0 +1,169 @@
+options:
+	Prefix: §8§l【§e§lEastereggs§8§l】&8&l▶§7
+	Title: §8§l【§e§lEastereggs§8§l】
+	
+on sign change:
+	if name of player is "BastianYT":
+		if line 1 of block is "eg-1":
+			set line 1 of block to "§6EG-1"
+			set line 4 of block to "§7(Rechtsklick)"
+			play "block_note_pling" to player	
+			send "{@Prefix} Du hast das §aEasteregg 1 §7gesetzt!"
+			
+		if line 1 of block is "eg-2":
+			set line 1 of block to "§6EG-2"
+			set line 4 of block to "§7(Rechtsklick)"
+			play "block_note_pling" to player	
+			send "{@Prefix} Du hast das §aEasteregg 2 §7gesetzt!"
+			
+		if line 1 of block is "eg-3":
+			set line 1 of block to "§6EG-3"
+			set line 4 of block to "§7(Rechtsklick)"
+			play "block_note_pling" to player	
+			send "{@Prefix} Du hast das §aEasteregg 3 §7gesetzt!"
+			
+		if line 1 of block is "eg-4":
+			set line 1 of block to "§6EG-4"
+			set line 4 of block to "§7(Rechtsklick)"
+			play "block_note_pling" to player	
+			send "{@Prefix} Du hast das §aEasteregg 4 §7gesetzt!"
+
+		if line 1 of block is "eg-5":
+			set line 1 of block to "§6EG-5"
+			set line 4 of block to "§7(Rechtsklick)"
+			play "block_note_pling" to player	
+			send "{@Prefix} Du hast das §aEasteregg 5 §7gesetzt!"
+			
+		if line 1 of block is "eg-6":
+			set line 1 of block to "§6EG-6"
+			set line 4 of block to "§7(Rechtsklick)"
+			play "block_note_pling" to player	
+			send "{@Prefix} Du hast das §aEasteregg 6 §7gesetzt!"
+			
+		if line 1 of block is "eg-7":
+			set line 1 of block to "§6EG-7"
+			set line 4 of block to "§7(Rechtsklick)"
+			play "block_note_pling" to player	
+			send "{@Prefix} Du hast das §aEasteregg 7 §7gesetzt!"
+			
+		if line 1 of block is "eg-8":
+			set line 1 of block to "§6EG-8"
+			set line 4 of block to "§7(Rechtsklick)"
+			play "block_note_pling" to player	
+			send "{@Prefix} Du hast das §aEasteregg 8 §7gesetzt!"
+			
+		if line 1 of block is "eg-9":
+			set line 1 of block to "§6EG-9"
+			set line 4 of block to "§7(Rechtsklick)"
+			play "block_note_pling" to player	
+			send "{@Prefix} Du hast das §aEasteregg 9 §7gesetzt!"
+			
+		if line 1 of block is "eg-10":
+			set line 1 of block to "§6EG-10"
+			set line 4 of block to "§7(Rechtsklick)"
+			play "block_note_pling" to player	
+			send "{@Prefix} Du hast das §aEasteregg 10 §7gesetzt!"
+
+on right click on sign:
+	if line 1 of block is "§6EG-1":
+		line 4 of block is "§7(Rechtsklick)"	
+		if {easteregg1::%player%} is not set:
+			set {easteregg1::%player%} to true
+			play "entity_player_levelup" to player
+			send player title "§7Gefunden §6§lEasteregg 1" with subtitle "§7Du bekommst §a§l1000$" for 2 seconds
+			add 1000 to player's account
+			set line 3 of block to "§f§l%player%"
+			launch "BALL" firework at player timed 1 coloured "red", "BLUE", "YELLOW", "PINK", "white" and "red"
+			
+	if line 1 of block is "§6EG-2":
+		line 4 of block is "§7(Rechtsklick)"	
+		if {easteregg2::%player%} is not set:
+			set {easteregg2::%player%} to true
+			play "entity_player_levelup" to player
+			send player title "§7Gefunden §6§lEasteregg 2" with subtitle "§7Du bekommst §a§l10 Dias" for 2 seconds
+			give 10 diamonds to the player
+			set line 3 of block to "§f§l%player%"
+			launch "BALL" firework at player timed 1 coloured "red", "BLUE", "YELLOW", "PINK", "white" and "red"
+			
+	if line 1 of block is "§6EG-3":
+		line 4 of block is "§7(Rechtsklick)"	
+		if {easteregg3::%player%} is not set:
+			set {easteregg3::%player%} to true
+			play "entity_player_levelup" to player
+			send player title "§7Gefunden §6§lEasteregg 3" with subtitle "§7Du bekommst §a§l1000 Cookies" for 2 seconds
+			add 1000 to {Cookies::%player%}
+			set line 3 of block to "§f§l%player%"
+			launch "BALL" firework at player timed 1 coloured "red", "BLUE", "YELLOW", "PINK", "white" and "red"
+			
+	if line 1 of block is "§6EG-4":
+		line 4 of block is "§7(Rechtsklick)"	
+		if {easteregg4::%player%} is not set:
+			set {easteregg4::%player%} to true
+			play "entity_player_levelup" to player
+			send player title "§7Gefunden §6§lEasteregg 5" with subtitle "§7Du bekommst §a§l2 Goldäpfel" for 2 seconds
+			give 2 golden apple to the player
+			set line 3 of block to "§f§l%player%"
+			launch "BALL" firework at player timed 1 coloured "red", "BLUE", "YELLOW", "PINK", "white" and "red"
+			
+	if line 1 of block is "§6EG-5":
+		line 4 of block is "§7(Rechtsklick)"	
+		if {easteregg5::%player%} is not set:
+			set {easteregg5::%player%} to true
+			play "entity_player_levelup" to player
+			send player title "§7Gefunden §6§lEasteregg 5" with subtitle "§7Du bekommst §a§lSpeed" for 2 seconds
+			apply speed to the player for 2 minutes
+			set line 3 of block to "§f§l%player%"
+			launch "BALL" firework at player timed 1 coloured "red", "BLUE", "YELLOW", "PINK", "white" and "red"
+			
+	if line 1 of block is "§6EG-6":
+		line 4 of block is "§7(Rechtsklick)"	
+		if {easteregg6::%player%} is not set:
+			set {easteregg6::%player%} to true
+			play "entity_player_levelup" to player
+			send player title "§7Gefunden §6§lEasteregg 6" with subtitle "§7Du bekommst §a§l4 C4" for 2 seconds
+			give 4 tnt named "§fC4" to the player
+			set line 3 of block to "§f§l%player%"
+			launch "BALL" firework at player timed 1 coloured "red", "BLUE", "YELLOW", "PINK", "white" and "red"
+			
+	if line 1 of block is "§6EG-7":
+		line 4 of block is "§7(Rechtsklick)"
+		if {easteregg7::%player%} is not set:
+			set {easteregg7::%player%} to true
+			play "entity_player_levelup" to player
+			send player title "§7Gefunden §6§lEasteregg 7" with subtitle "§7Du bekommst §a§l500 Cookies" for 2 seconds
+			add 500 to {Cookies::%player%}
+			set line 3 of block to "§f§l%player%"
+			launch "BALL" firework at player timed 1 coloured "red", "BLUE", "YELLOW", "PINK", "white" and "red"
+			
+	if line 1 of block is "§6EG-8":
+		line 4 of block is "§7(Rechtsklick)"
+		if {easteregg8::%player%} is not set:
+			set {easteregg8::%player%} to true
+			play "entity_player_levelup" to player
+			send player title "§7Gefunden §6§lEasteregg 8" with subtitle "§7Du bekommst §a§l66 Dirt" for 2 seconds
+			give 66 dirt to the player
+			set line 3 of block to "§f§l%player%"
+			launch "BALL" firework at player timed 1 coloured "red", "BLUE", "YELLOW", "PINK", "white" and "red"
+			
+	if line 1 of block is "§6EG-9":
+		line 4 of block is "§7(Rechtsklick)"
+		if {easteregg9::%player%} is not set:
+			set {easteregg9::%player%} to true
+			play "entity_player_levelup" to player
+			send player title "§7Gefunden §6§lEasteregg 9" with subtitle "§7Du bekommst §a§lRandom Rüstung" for 2 seconds
+			give 1 chestplate to the player
+			give 1 boots to the player
+			give 1 helmet to the player
+			give 1 leggings to the player
+			set line 3 of block to "§f§l%player%"
+			launch "BALL" firework at player timed 1 coloured "red", "BLUE", "YELLOW", "PINK", "white" and "red"
+			
+	if line 1 of block is "§6EG-10":
+		line 4 of block is "§7(Rechtsklick)"
+		if {easteregg10::%player%} is not set:
+			set {easteregg10::%player%} to true
+			play "entity_player_levelup" to player
+			send player title "§7Gefunden §6§lEasteregg 10" with subtitle "§7Du bekommst §a§l 1 Easteregg" for 2 seconds
+			give 1 egg named "§fEasteregg" to the player
+			set line 3 of block to "§f§l%player%"
+			launch "BALL" firework at player timed 1 coloured "red", "BLUE", "YELLOW", "PINK", "white" and "red"

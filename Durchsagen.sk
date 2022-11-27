@@ -1,0 +1,444 @@
+on load:
+	loop 10000 times:	
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "        §7Du möchtest §d§lYoutuber §7und uns"
+		broadcast "    §7unterstützen dann mache folgenden"
+		broadcast "             §7Befehl in denn Chat §8(§6§l/yt§8)"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "          §7Alle §fSpieler §7auf dem Netzwerk"
+		broadcast "         §7kannst du sehen mit dem Befehl"
+		broadcast "                       §8(§7§6§l/glist§8)"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "        §7Du hast Lust auf neue Freunde?"
+		broadcast "          §7Dann besorg Dir doch welche"
+		broadcast "            §7um mit Ihnen zu spielen §8(§6§l/f§8)"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "            §7Du magst deine eigene Gilde"
+		broadcast "         §7haben bzw Clan dann musst du"
+		broadcast "          §7in denn Chat §8(§6§l/clan§8) §7schreiben"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "           §7Kennst du WoW? Es gibt dort"
+		broadcast "        §7einen Coolen Chat der über dir"
+		broadcast "                  §7erscheint §8(§6§l/holo§8)"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "            §7Du hast kein Geld und willst"
+		broadcast "          §7welches weil Du der reicheste"
+		broadcast "                 §7sein magst §8(§6§l/jobs§8)"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "              §7Du hast Lust zu Heiraten?"
+		broadcast "            §7Dann kannst du das bei Uns"
+		broadcast "              §7tun nutze dafür §8(§6§l/marry§8)"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "            §7Du magst Blöcke kaufen um"
+		broadcast "      §7etwas zu bauen du kannst überall"
+		broadcast "         §7denn Command §8(§6§l/shop§8) §7nutzen"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"		
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "               §7Du magst uns helfen?"
+		broadcast "            §7Du erhälst dafür auch was"
+		broadcast "                 §7Benutze §8(§6§l/vote§8)"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"		
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "               §7Du hast ein Problem ?"
+		broadcast "            §7Dann tippe §8(§6§l/support§8)"
+		broadcast "             §7Jemand wird dir helfen"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "     §7Du hast keine Lust mehr auf den Chat"
+		broadcast "              §7Dann tippe §8(§6§l/vergessen§8)"
+		broadcast "                 §7Und du vergisst alles"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"		
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "          §7Wie lange bist du schon Online"
+		broadcast "          §7das kannst du mit §8(§6§l/time§8) §7sehen"
+		broadcast "         §7Das ist wichtig für das bewerben"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"		
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "         §7Das einfache sehen der User geht"
+		broadcast "               §7mit dem Befehl §8(§6§l/online§8)"
+		broadcast "        §7Dir werden die User besser angezeigt"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "           §7Erfolge ? Ja die gibt es hier"
+		broadcast "          §7tippe denn Befehl §8(§6§l/erfolg§8) §7ein"
+		broadcast "            §7Du kannst auch Erfolge der"
+		broadcast "                  §7anderen sehen"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "            §7Das §9§lTeam §7siehst du mit dem"
+		broadcast "           §7Befehl §8(§6§l/team§8) §7alle Mitglieder"
+		broadcast "              §7sind dort eingespeichert"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "        §7Du magst ansehen was für §cRänge §7es"
+		broadcast "             §7gibt dann mache es mit dem"
+		broadcast "         §7Command §8(§6§l/spenden§8) §7klicke §6Cookies"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "           §7Du magst deine §6Cookies §7sehen"
+		broadcast "          §7tippe denn Befehl §8(§6§l/cookies§8) §7ein"
+		broadcast "     §7Du kannst auch §6Cookies §7der anderen sehen"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"		
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "           §7Die besten PvPler siehst du"
+		broadcast "              §7mit dem Command §8(§6§l/top10§8)"
+		broadcast "                 §7Killer über Killer"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "             §7Deine PvP Stats siehst du"
+		broadcast "              §7mit dem Command §8(§6§l/stats§8)"
+		broadcast "                §7Deine KD ist wichtig"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "               §7Willst du dich bewerben ?"
+		broadcast "             §7tippe §8(§6§l/bewerben§8) §7um dich"
+		broadcast "                    §7zu §cbewerben"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "            §7Du kennst die §4Regeln §cnicht?"
+		broadcast "               §7Dann ist das schlecht"
+		broadcast "           §7benutze den Befehl §8(§6§l/regeln§8)"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "     §7Du möchtest wissen was immer neu ist?"
+		broadcast "          §7Das haben wir jz eingefügt"
+		broadcast "         §7tippe den Befehl §8(§6§l/updates§8) §7ein"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "            §7Du hast zu viele §aTaler §7?"
+		broadcast "      §7Kannst sie abgeben wenn du magst"
+		broadcast "           §7mit dem Befehl §8(§6§l/talergeben§8)"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"		
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "             §7Mit dem Befehl §8(§6§l/item§8)"
+		broadcast "          §7Kannst du allen dein/e Items"
+		broadcast "             §7in der Hand zeigen"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "        §7Wer ist der reicheste Spieler"
+		broadcast "        §7auf dem Netzwerk dann musst Du"
+		broadcast "          §7das eintippen §8(§6§l/baltop§8)"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "             §7Ihr könnt jz Eure §aItems"
+		broadcast "           §7im §6Auktions Haus §7verkaufen"
+		broadcast "                 §7Tippe dafür §8(§6§l/ah§8)"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "                  §7Dein Inv ist voll?"
+		broadcast "             §7hau die Sachen in den §cMüll"
+		broadcast "          §7benutze den Befehl §8(§6§l/abfall§8)"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"		
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "             §7Du hast keien Lust ein §eHaus"
+		broadcast "         §7zu bauen dann besorg dir eins"
+		broadcast "          §7tippe den Befehl §8(§6§l/haus§8) §7ein"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "            §7Schliese mit anderen §f§lSpielern"
+		broadcast "       §7Frieden um §cnicht getötet §7zu werden"
+		broadcast "      §7benutze dafür den Befehl §8(§6§l/frieden§8)"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "              §7Du kannst für deinen §aShop"
+		broadcast "        §7Werbung machen alle 10 Sekunden"
+		broadcast "          §7tippe dafür den Command §8(§6§l/ad§8)"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "           §7Du magst deine §eBankguthaben §7sehen"
+		broadcast "          §7tippe denn Befehl §8(§6§l/bankkonto§8) §7ein"
+		broadcast "     §7Du kannst auch §eBanguthaben §7der anderen sehen"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "           §7Du magst deine §aTaler §7sehen"
+		broadcast "          §7tippe denn Befehl §8(§6§l/taler§8) §7ein"
+		broadcast "     §7Du kannst auch §aTaler §7der anderen sehen"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "           §7Du magst deine §bPvP Stats §7resetten"
+		broadcast "          §7tippe denn Befehl §8(§6§l/statsreset§8) §7ein"
+		broadcast "          §7Damit fängst du komplett von vorne an"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "           §7Du magst deine §2Level Stats §7resetten"
+		broadcast "          §7tippe denn Befehl §8(§6§l/levelreset§8) §7ein"
+		broadcast "           §7Damit fängst du komplett von vorne an"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "        §7Spieler haben vlt eigene Warps"
+		broadcast "       §7tippe denn Befehl §8(§6§l/swarp§8) §7ein"
+		broadcast "   §7Um zu sehen welche Spieler Warps es gibt"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "        §7Du kannst dir ohne §bLabyMod"
+		broadcast "      §7die §fNamehistory §7von anderen ansehen"
+		broadcast "             §7benutze den Befehl §8(§6§l/name§8)"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "                §7Du kannst dir §2Perks"
+		broadcast "             §7holen mit dennen Du z.B."
+		broadcast "           §7schneller §eabbauen §7kannst"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "                  §7Du kannst dein §eGeld"
+		broadcast "         §7in die §eBank §7einzahlen dadurch"
+		broadcast "           §7kannst Du §eZinsen §7bekommen"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "             §7Suche alle §6Eastereggs"
+		broadcast "            §7In der Lobby und werde"
+		broadcast "               §7Meister im §eEier §7suchen"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"		
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "                §7In der §aFarmwelt"
+		broadcast "           §7kannst Du in wenigen Minute"
+		broadcast "        §7Sachen für dein §cGS §7bekommen"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"		
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "            §7Du bekommst §cRänge §7bei uns"
+		broadcast "               §cGRATIS §7mit §6Cookies §7oder"
+		broadcast "         §7wenn Du uns eine §cSpende §7gibts"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "            §7Spiel doch mal beim §aCasino"
+		broadcast "           §7mit etwas §6Glück §7kannst du"
+		broadcast "         §7sogar einiges an §eGeld §7gewinnen"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "           §7Du willst mit anderen reden?"
+		broadcast "         §7Komm auf unseren §aTeamspeak §7:)"
+		broadcast "                §7Adresse steht im Tab"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
+		
+		wait 12 minutes
+		play "entity_player_levelup" to players
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"
+		broadcast ""
+		broadcast "        §7Vergess nicht deine §eBelohnungen"
+		broadcast "      §7abzuholen viele nice §aSachen §7bekommst"
+		broadcast "             §7Du wie §cSchlüssel §7und mehr"
+		broadcast ""
+		broadcast "          §8§m--§7§m--§e§m--§6§m--§8( §6§lINFOS §8)§6§m--§e§m--§7§m--§8§m--"	
