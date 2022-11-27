@@ -1,0 +1,8 @@
+# false => The offhand can not be used
+offhand: true
+
+# false => With out a hitdelay (like MC 1.8)
+hit-delay: false
+
+# true => Rightclick with a sword will enable a shield
+sword-blocking: false
